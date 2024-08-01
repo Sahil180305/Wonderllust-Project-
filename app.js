@@ -69,6 +69,9 @@ app.use("/listings/:id/reviews",reviewRoute);
 app.use("/",userRoute);
 app.use("/",searchRoute);
 app.use("/",anchorRoute);
+app.get("/",(req,res)=>{
+    res.redirect("./listings");
+})
 
 app.listen(8080,()=>{
     console.log("Server is listning at port :8080");
