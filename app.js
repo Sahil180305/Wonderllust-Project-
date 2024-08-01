@@ -11,6 +11,8 @@ const ejsMate=require("ejs-mate");
 const listingRoute=require("./routes/listing.js");
 const reviewRoute=require("./routes/review.js");
 const userRoute=require("./routes/user.js");
+const searchRoute=require("./routes/search.js");
+const anchorRoute=require("./routes/Anchor.js")
 const session=require("express-session");
 const MongoStore = require('connect-mongo');
 const flash=require("connect-flash");
@@ -65,6 +67,8 @@ app.engine("ejs",ejsMate);
 app.use("/listings",listingRoute);
 app.use("/listings/:id/reviews",reviewRoute);
 app.use("/",userRoute);
+app.use("/",searchRoute);
+app.use("/",anchorRoute);
 
 app.listen(8080,()=>{
     console.log("Server is listning at port :8080");

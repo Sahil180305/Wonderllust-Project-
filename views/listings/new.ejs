@@ -23,7 +23,23 @@
             <label for="img_link" class="form-label">Uppload Listing Image </label>
             <input name="listing[image]" id="img_link" class="form-control" type="file" required>
         </div>
-
+        <div class="mb-3">
+            <label for="category">Select Listing Category</label>
+            <select class="form-select" id="category" name="listing[category]" aria-label="Default select example">
+                <option selected>Select a category</option>
+                <option value="Beach">Beach</option>
+                <option value="Farm">Farm</option>
+                <option value="Mountain">Mountain</option>
+                <option value="Castle">Castle</option>
+                <option value="Dome">Dome</option>
+                <option value="Iconic_Cities">Iconic Cities</option>
+                <option value="Rooms">Rooms</option>
+                <option value="Arctic">Arctic</option>
+              </select>
+              <div class="invalid-feedback">
+                Category should be vallid
+            </div>
+        </div>
         <div class="row">
             <div class="mb-3 col-md-4">
                 <label for="Price" class="form-label">Price : </label>

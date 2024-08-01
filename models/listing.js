@@ -26,9 +26,9 @@ let listingScehma= new Schema({
         type:Schema.Types.ObjectId,
         ref:"User",
     },
-    catigory:{
+    category:{
         type:String,
-        enum:["mountaines","arctic","farms","camping","beach","castles","pools","Iconic Cities","rooms"],
+        enum:["Mountain","Arctic","Farm","Camping","Beach","Castle","Pools","Iconic_Cities","Rooms","Boats","Dome","Amazing_Pools",""],
     },
 });
 

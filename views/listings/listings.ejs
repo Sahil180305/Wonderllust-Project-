@@ -39,58 +39,96 @@
 
 <body>
 
+    <!-- <h2>All Listings</h2> -->
      <div id="filters">
-        <div class="filter">
-            <div><i class="fa-solid fa-fire"></i></div>
-            <p>Trending</p>
+        <div class="filter" >
+            <a href="/search/category/trending" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-fire"></i></div>
+                <p>Trending</p>
+
+            </a>
+            
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-bed"></i></div>
-            <p>Rooms</p>
+            <a  href="/search/category/Rooms" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-bed"></i></div>
+                <p>Rooms</p>
+            </a>
+            
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-mountain-city"></i></div>
-            <p>Iconic Cities</p>
+            <a  href="/search/category/Iconic_Cities" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-mountain-city"></i></div>
+                <p>Iconic Cities</p>
+            </a>
+           
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-mountain"></i></div>
+            <a  href="/search/category/Mountain" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-mountain"></i></div>
             <p>Mountains</p>
+            </a>
+            
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-person-swimming"></i></div>
+            <a  href="/search/category/Amazing_Pools" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-person-swimming"></i></div>
             <p>Amazing Pool</p>
+            </a>
+            
         </div>
         <div class="filter">
-            <div><i class="fa-brands fa-fort-awesome-alt"></i></div>
-            <p>Castles</p>
+            <a  href="/search/category/Castle" style="text-decoration: none; color:black">
+                <div><i class="fa-brands fa-fort-awesome-alt"></i></div>
+                <p>Castles</p>
+            </a>
+           
         </div>
         
         <div class="filter">
-            <div><i class="fa-solid fa-campground"></i></div>
-            <p>Camping</p>
+            <a  href="/search/category/Camping" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-campground"></i></div>
+                <p>Camping</p>
+            </a>
+           
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-tractor"></i></div>
-            <p>Farms</p>
+            <a  href="/search/category/Farm" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-tractor"></i></div>
+                <p>Farms</p>
+            </a>
+           
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-umbrella-beach"></i></div>
+            <a  href="/search/category/Beach" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-umbrella-beach"></i></div>
             <p>Beach</p>
+            </a>
+            
+        </div >
+        <div class="filter">
+            <a  href="/search/category/Arctic" style="text-decoration: none; color:black">
+                <div><i class="fa-regular fa-snowflake"></i></div>
+                <p>Arctic</p>
+            </a>
+           
         </div>
         <div class="filter">
-            <div><i class="fa-regular fa-snowflake"></i></div>
-            <p>Arctic</p>
-        </div>
-        <div class="filter">
-            <div><i class="fa-solid fa-landmark-dome"></i></div>
+            <a  href="/search/category/Dome" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-landmark-dome"></i></div>
             <p>Dome</p>
+            </a>
+            
         </div>
         <div class="filter">
-            <div><i class="fa-solid fa-ship"></i></div>
-            <p>Boats</p>
+            <a  href="/search/category/Boats" style="text-decoration: none; color:black">
+                <div><i class="fa-solid fa-ship"></i></div>
+                <p>Boats</p>
+            </a>
+           
         </div>
         <div class="tax-toggle">
-            <div class="form-check-reverse form-switch">
+            <div class="form-check-reverse form-switch" >
                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                 <label class="form-check-label" for="flexSwitchCheckDefault">Display total after taxes</label>
             </div>
@@ -121,6 +159,7 @@
                     <!-- <li><a href="/listings/<%=place._id%>"><%=place.title %></a></li> -->
                 <% } %>
             </div>
+    </div>
     <script>
      let taxSwitch=document.getElementById("flexSwitchCheckDefault");
      taxSwitch.addEventListener("click",()=>{
