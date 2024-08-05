@@ -1,9 +1,25 @@
 <% layout("/layouts/boilerplate") %>
 
+<style>
+    
+    #map {
+        width: 100%;
+        height: 450px;
+        background: grey;
+    }
+    
+    #panel {
+        width: 100%;
+        height: 400px;
+    }
+    </style>
+    
+    
 <body>
 
     <script>
         let mapToken="<%=process.env.MAP_TOKEN%>";
+        let placeCoordinates=<%-JSON.stringify(place.geometry)%>;
     </script>
 
 
@@ -88,14 +104,17 @@
             </div>
             <%}%>
         </div>
-    </div>
-    <div class="row mt-3 show-card ">
-        <div class="col-8 offset-3">
+        <div class="col-8 offset-2 mt-3 mb-3">
             <h3>Where you'll be</h3>
-            <!-- <div id="map"></div> -->
-            <h3>Working on map functionality 😊</h3>
+            <div id="map"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
     </div>
+    
     <script src="/js/map.js"></script>
 
 </body>

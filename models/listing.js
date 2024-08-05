@@ -30,6 +30,17 @@ let listingScehma= new Schema({
         type:String,
         enum:["Mountain","Arctic","Farm","Camping","Beach","Castle","Pools","Iconic_Cities","Rooms","Boats","Dome","Amazing_Pools",""],
     },
+    geometry:{
+        type: {
+            type: String, // Don't do `{ location: { type: String } }`
+            enum: ['Point'], // 'location.type' must be 'Point'
+            required: true
+        },
+        coordinates: {
+            type: [Number],
+            required: true
+        } 
+    }
 });
 
 listingScehma.post("findOneAndDelete",async (listing)=>{
